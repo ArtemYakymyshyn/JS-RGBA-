@@ -103,6 +103,11 @@ button {
   height: 100%;
   margin: 0px auto;
 }
+@media (max-width: 405px) {
+  .wrapper .container {
+    min-width: 405px;
+  }
+}
 .wrapper .container .first-line {
   width: 100%;
   height: 50%;
@@ -126,6 +131,22 @@ button {
 .wrapper .container .first-line .fs-wrk .fs-main-parag-element p:nth-child(1) {
   font-size: 36px;
   color: black;
+}
+@media (max-width: 961px) {
+  .wrapper .container .first-line .fs-wrk .fs-main-parag-element p:nth-child(1) {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media (max-height: 672px) {
+  .wrapper .container .first-line .fs-wrk .fs-main-parag-element p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-height: 608px) {
+  .wrapper .container .first-line .fs-wrk .fs-main-parag-element p:nth-child(1) {
+    margin-bottom: 100px;
+  }
 }
 .wrapper .container .first-line .fs-wrk .fs-main-parag-element p:nth-child(1) span {
   color: crimson;
@@ -179,11 +200,46 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 50px;
+}
+@media (max-width: 1295px) {
+  .wrapper .container .secPlusThird {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-height: 722px) {
+  .wrapper .container .secPlusThird {
+    margin-top: 100px;
+  }
+}
+@media (max-height: 608px) {
+  .wrapper .container .secPlusThird {
+    margin-top: 250px;
+  }
 }
 .wrapper .container .secPlusThird .second-line {
   width: 60%;
-  height: 449px;
+  height: 609px;
   border: 1px solid black;
+}
+@media (max-width: 1295px) {
+  .wrapper .container .secPlusThird .second-line {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line {
+    height: 924px;
+  }
 }
 .wrapper .container .secPlusThird .second-line .sl-element-1 {
   width: 98%;
@@ -214,20 +270,98 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .startAndStopButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .startAndStopButtons button {
   margin-bottom: 30px;
   width: 40%;
   height: 100px;
   color: white;
-  background-color: #306ef7;
+  background-color: rgb(48, 110, 247);
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   font-size: 28px;
+}
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .startAndStopButtons button {
+    width: 80%;
+  }
 }
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .startAndStopButtons button:hover {
   width: 50%;
   background-color: #fe6783;
   color: white;
+}
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .startAndStopButtons button:hover {
+    width: 90%;
+  }
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons .selectedColorButton-1 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons .selectedColorButton-2 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons .selectedColorButton-3 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons .selectedColorButton-4 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .selectedColorButtons .selectedColorButton-5 {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
 }
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons {
   margin-top: 30px;
@@ -239,6 +373,17 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons button {
   margin-bottom: 30px;
   width: 30%;
@@ -249,10 +394,20 @@ button {
           transition-duration: 0.3s;
   font-size: 28px;
 }
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons button {
+    width: 80%;
+  }
+}
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons button:hover {
   width: 35%;
   background-color: red;
   color: white;
+}
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .randomButtons button:hover {
+    width: 90%;
+  }
 }
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .lastButton {
   width: 100%;
@@ -277,21 +432,42 @@ button {
           transition-duration: 0.3s;
   font-size: 28px;
 }
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .lastButton button {
+    width: 80%;
+  }
+}
 .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .lastButton button:hover {
   width: 50%;
-  background-color: #306ef7;
+  background-color: rgb(48, 110, 247);
   color: white;
+}
+@media (max-width: 750px) {
+  .wrapper .container .secPlusThird .second-line .sl-element-1 .sl-control-panel .lastButton button:hover {
+    width: 90%;
+  }
 }
 .wrapper .container .secPlusThird .third-line {
   width: 38%;
-  height: 449px;
+  height: 609px;
   border: 1px solid black;
   overflow-y: scroll;
+}
+@media (max-width: 1295px) {
+  .wrapper .container .secPlusThird .third-line {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 .wrapper .container .secPlusThird .third-line .thl-wrk {
   max-width: 95%;
   margin: 0px auto;
   height: 100%;
+}
+@media (max-width: 570px) {
+  .wrapper .container .secPlusThird .third-line .thl-wrk {
+    max-width: 99%;
+  }
 }
 .wrapper .container .secPlusThird .third-line .thl-wrk .thl-element-1 {
   margin-top: 10px;
@@ -299,4 +475,14 @@ button {
 .wrapper .container .secPlusThird .third-line .thl-wrk .thl-element-1 p {
   font-size: 24px;
   margin-bottom: 20px;
+}
+@media (max-width: 570px) {
+  .wrapper .container .secPlusThird .third-line .thl-wrk .thl-element-1 p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .wrapper .container .secPlusThird .third-line .thl-wrk .thl-element-1 p {
+    font-size: 16px;
+  }
 }
