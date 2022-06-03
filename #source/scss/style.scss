@@ -1,0 +1,203 @@
+@import "nullstyle.scss";
+
+* {
+   font-family: "Oswald", sans-serif;
+}
+
+button {
+   letter-spacing: 1.8px;
+}
+
+.wrapper {
+   width: 100%;
+   height: 100%;
+
+   .container {
+      max-width: 1600px;
+      height: 100%;
+      margin: 0px auto;
+      .first-line {
+         width: 100%;
+         height: 50%;
+
+         .fs-wrk {
+            height: 100%;
+            .fs-main-parag-element {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               margin-top: 50px;
+
+               & p:nth-child(1) {
+                  font-size: 36px;
+                  color: black;
+                  & span {
+                     color: crimson;
+                  }
+               }
+
+               & p:nth-child(2) {
+                  font-size: 36px;
+                  color: black;
+                  display: none;
+                  & span {
+                     color: crimson;
+                  }
+               }
+            }
+            .fs-element-1 {
+               height: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 100%;
+               .fs-rgbacircle-wrapper {
+                  width: 100%;
+                  border: 4px solid dodgerblue;
+                  height: 320px;
+                  transition-duration: 0.5s;
+                  position: relative;
+                  overflow: hidden;
+                  // .fs-widthAndHeightElems {
+                  //    width: 100%;
+                  //    height: 100%;
+                  //    position: absolute;
+                  //    .fs-height-elem {
+                  //       position: absolute;
+                  //       top: 0;
+                  //       left: 50%;
+                  //       height: 100%;
+                  //       width: 8px;
+                  //       background-color: black;
+                  //    }
+                  //    .fs-width-elem {
+                  //       position: absolute;
+                  //       top: 50%;
+                  //       left: 0;
+                  //       background-color: black;
+                  //       width: 100%;
+                  //       height: 8px;
+                  //    }
+                  // }
+                  .fs-rgba-circle-elements {
+                     width: 100%;
+                     height: 100%;
+                     display: flex;
+                     .fs-rgba-circle-element-1 {
+                        width: 8%;
+                        height: 100%;
+                        border: 2px solid white;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .secPlusThird {
+         display: flex;
+         justify-content: space-between;
+         .second-line {
+            width: 60%;
+            height: 449px;
+            border: 1px solid black;
+
+            .sl-element-1 {
+               width: 98%;
+               margin: 0px auto;
+               height: 100%;
+
+               .sl-control-panel {
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  .startAndStopButtons {
+                     margin-top: 15px;
+                     width: 100%;
+                     display: flex;
+                     justify-content: space-between;
+                     & button {
+                        margin-bottom: 30px;
+                        width: 40%;
+                        height: 100px;
+                        color: white;
+                        background-color: rgba(48, 110, 247, 1);
+                        transition-duration: 0.3s;
+                        font-size: 28px;
+                        &:hover {
+                           width: 50%;
+
+                           background-color: #fe6783;
+                           color: white;
+                        }
+                     }
+                  }
+                  .randomButtons {
+                     margin-top: 30px;
+                     width: 100%;
+                     display: flex;
+                     justify-content: space-between;
+                     & button {
+                        margin-bottom: 30px;
+                        width: 30%;
+                        height: 100px;
+                        color: white;
+                        background-color: black;
+                        transition-duration: 0.3s;
+                        font-size: 28px;
+                        &:hover {
+                           width: 35%;
+
+                           background-color: red;
+                           color: white;
+                        }
+                     }
+                  }
+                  .lastButton {
+                     width: 100%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     margin-top: 30px;
+                     & button {
+                        margin-bottom: 30px;
+                        width: 40%;
+                        height: 100px;
+                        color: white;
+                        background-color: black;
+                        transition-duration: 0.3s;
+                        font-size: 28px;
+                        &:hover {
+                           width: 50%;
+
+                           background-color: rgba(48, 110, 247, 1);
+                           color: white;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+         .third-line {
+            width: 38%;
+            height: 449px;
+            border: 1px solid black;
+            overflow-y: scroll;
+            .thl-wrk {
+               max-width: 95%;
+               margin: 0px auto;
+               height: 100%;
+               .thl-element-1 {
+                  margin-top: 10px;
+                  & p {
+                     font-size: 24px;
+                     margin-bottom: 20px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
